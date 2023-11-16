@@ -27,10 +27,10 @@
                          <p style="text-align: center;font-size: 20px;">1st Year</p>
                     </div>
                     <div class="col-md-4 col-lg-2">
-                         <a class="btn btn-primary text-center border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)1.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 1; ?>'">Semester 1</a>
+                         <a class="btn btn-primary text-center border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)1.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 1; ?>">Semester 1</a>
                     </div>
                     <div class="col-md-4">
-                         <a class="btn btn-primary border rounded-pill" href=" /APMS/Lectures_panel/lectures_Result(Show)/Results(Show)2.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 2; ?>'">Semester 2</a>
+                         <a class="btn btn-primary border rounded-pill" href=" /APMS/Lectures_panel/lectures_Result(Show)/Results(Show)2.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 2; ?>">Semester 2</a>
                     </div>
                </div>
           </div>
@@ -40,10 +40,10 @@
                          <p style="text-align: center;font-size: 20px;">2nd Year</p>
                     </div>
                     <div class="col-md-4 col-lg-2 col-xl-2">
-                         <a class="btn btn-primary text-center border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)3.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 3; ?>'">Semester 3</a>
+                         <a class="btn btn-primary text-center border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)3.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 3; ?>">Semester 3</a>
                     </div>
                     <div class="col-md-4">
-                         <a class="btn btn-primary border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)4.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 4; ?>'">Semester 4</a>
+                         <a class="btn btn-primary border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)4.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 4; ?>">Semester 4</a>
                     </div>
                </div>
           </div>
@@ -53,10 +53,10 @@
                          <p style="text-align: center;font-size: 20px;">3rd Year</p>
                     </div>
                     <div class="col-md-4 col-lg-2 col-xl-2">
-                         <a class="btn btn-primary text-center border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)5.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 5; ?>'">Semester 5</a>
+                         <a class="btn btn-primary text-center border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)5.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 5; ?>">Semester 5</a>
                     </div>
                     <div class="col-md-4">
-                         <a class="btn btn-primary border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)6.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 6; ?>'">Semester 6</a>
+                         <a class="btn btn-primary border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)6.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 6; ?>">Semester 6</a>
                     </div>
                </div>
           </div>
@@ -66,10 +66,10 @@
                          <p style="text-align: center;font-size: 20px;">4th Year</p>
                     </div>
                     <div class="col-md-4 col-lg-2">
-                         <a class="btn btn-primary text-center border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)7.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 7; ?>'">Semester 7</a>
+                         <a class="btn btn-primary text-center border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)7.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 7; ?>">Semester 7</a>
                     </div>
                     <div class="col-md-4">
-                         <a class="btn btn-primary border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)8.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 8; ?>'" a>Semester 8</a>
+                         <a class="btn btn-primary border rounded-pill" href="/APMS/Lectures_panel/lectures_Result(Show)/Results(Show)8.php?user_id=<?php echo $user_id; ?>&batch_id=<?php echo $batch_id; ?>&semester_id=<?php echo 8; ?>" a>Semester 8</a>
 
                     </div>
                </div>

@@ -8,5 +8,5 @@ $_SESSION = array();
 session_destroy();
 
 // Redirect to the login page or another appropriate location
-header("Location: /APMS/Login/loging_page/index.php"); // Change "login.php" to the actual login page URL
+header("Location:/APMS/Login/loging_page/index.php"); // Change "login.php" to the actual login page URL
 exit();
