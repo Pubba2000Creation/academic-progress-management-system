@@ -11,8 +11,8 @@
             $degree_id = $_GET['degree_id'];
             $batch_id = $_GET['batch_id'];
 
-            echo $batch_id;
-            echo '.' . $degree_id;
+            // echo $batch_id;
+            //echo '.' . $degree_id;
             // Now you can use $degree_id and $batch_id in your code
         }
         ?>
@@ -84,7 +84,7 @@
                     ?>
                             <tr>
                                 <td><?php echo $count_num++ ?></td>
-                                <td><img class="rounded-circle img-fluid border" style="width: 50px;height: 50px;" src="/APMS/images/std_img/<?php echo $std_img; ?>"></td>
+                                <td><img class="rounded-circle img-fluid border" style="width: 50px;height: 50px;" src="/APMS/images/student/<?php echo $std_img ?> "></td>
                                 <td><?php echo $std_index_no ?> </td>
                                 <td><?php echo $std_name ?></td>
                                 <td><?php echo $std_gender ?></td>

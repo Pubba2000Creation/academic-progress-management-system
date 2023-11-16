@@ -14,7 +14,7 @@
             <?php
             if (isset($_GET['batch_id'])) {
                 $batch_id = $_GET['batch_id'];
-                echo $batch_id;
+               // echo $batch_id;
             }
 
             ?>

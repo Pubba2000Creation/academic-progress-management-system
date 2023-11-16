@@ -11,9 +11,9 @@
             $semester_number = $_GET['semester_id'];
 
             // Now you can use $user_id and $batch_id as needed
-            echo "User ID: $user_id<br>";
-            echo "Batch ID: $batch_id <br>";
-            echo "semester_num:" . $semester_number;
+            //echo "User ID: $user_id<br>";
+            //echo "Batch ID: $batch_id <br>";
+            //echo "semester_num:" . $semester_number;
         }
 
         $sql_degree = "SELECT degree_id FROM tbl_degree WHERE lecture_id = $user_id AND Batch_id = $batch_id";

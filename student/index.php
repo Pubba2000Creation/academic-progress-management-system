@@ -27,7 +27,7 @@
             <div style="margin-left: 3%;">
                 <?php
                 ////////////////////////////////////////////////////////////////////////////
-                echo "the stu_id: " . $user_id;
+                //echo "the stu_id: " . $user_id;
                 ?>
                 <section>
                     <h1 style="margin-bottom: 20px;">Dashboard</h1>

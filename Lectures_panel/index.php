@@ -52,7 +52,7 @@
 
                 </div>
             </div>
-            <?php echo 'degree_id= '. $Degree_id; ?>
+            <!-- <?php echo 'degree_id= '. $Degree_id; ?> -->
         </div>
     </div>
     <?php include_once "c:/xampp/htdocs/APMS/Lectures_panel/parts/footer.php"; ?>

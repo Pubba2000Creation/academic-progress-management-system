@@ -11,9 +11,9 @@
             $semester_number = $_GET['semester_id'];
 
             // Now you can use $user_id and $batch_id as needed
-            echo "User ID: $user_id<br>";
-            echo "Batch ID: $batch_id <br>";
-            echo "semester_num:" . $semester_number;
+          //  echo "User ID: $user_id<br>";
+           // echo "Batch ID: $batch_id <br>";
+           // echo "semester_num:" . $semester_number;
         }
 
         $sql_degree = "SELECT degree_id FROM tbl_degree WHERE lecture_id = $user_id AND Batch_id = $batch_id";
@@ -185,7 +185,7 @@
 
 
         // Insert data into tbl_results
-        $sqlInsert = "INSERT INTO tbl_results (Batch_id, enrollment_number, grade_subject_1, grade_subject_2, grade_subject_3, grade_subject_4, grade_subject_5, grade_subject_6, grade_subject_7, grade_subject_8, grade_subject_9, current_gpa)
+        $sqlInsert = "INSERT INTO tbl_results_sem1 (Batch_id, enrollment_number, grade_subject_1, grade_subject_2, grade_subject_3, grade_subject_4, grade_subject_5, grade_subject_6, grade_subject_7, grade_subject_8, grade_subject_9, current_gpa)
               VALUES ('$batch_id', '$enrollmentNumber', '" . implode("', '", $grades) . "', '$calculatedGPA')";
 
         if (mysqli_query($conn, $sqlInsert)) {

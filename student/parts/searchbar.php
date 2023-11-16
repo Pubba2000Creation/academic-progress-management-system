@@ -1,6 +1,6 @@
  <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
       <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-           <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+           <!-- <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
                 <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
            </form>
            <ul class="navbar-nav flex-nowrap ms-auto">
@@ -12,41 +12,66 @@
                                </div>
                           </form>
                      </div>
-                </li>
+                </li> -->
 
 
-                <div class="d-none d-sm-block topbar-divider"></div>
-                <li class="nav-item dropdown no-arrow">
+           <div class="d-none d-sm-block topbar-divider"></div>
+           <li class="nav-item dropdown no-arrow">
 
-                     <div class="nav-item dropdown no-arrow">
-                          <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
+                <div class="nav-item dropdown no-arrow">
+                     <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
 
-                               <span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span>
+                          <?php
+                              $sql_student_info = "SELECT * FROM tbl_students WHERE stu_id = $user_id";
+                              $res_student_info = mysqli_query($conn, $sql_student_info);
 
-                               <img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg">
+                              if ($res_student_info == TRUE) {
+                                   $count_student_info = mysqli_num_rows($res_student_info);
 
+                                   if ($count_student_info > 0) {
+                                        while ($rows_student_info = mysqli_fetch_assoc($res_student_info)) {
+
+                                             $name = $rows_student_info['name'];
+
+                                             $image = $rows_student_info['image'];
+                                        }
+                                   }
+                              }
+
+                              ?>
+
+
+
+
+
+                          <span class="d-none d-lg-inline me-2 text-gray-600 small"><?php echo $name ?></span>
+
+                          <img class="border rounded-circle img-profile" src="/APMS/images/student/<?php echo $image ?> ">
+
+                     </a>
+
+
+
+                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+
+
+
+                          <a class="dropdown-item" href="/APMS/student/Student_profile/Std_profile.php?user_id='<?php echo $user_id; ?>'">
+                               <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile
                           </a>
 
 
+                          <div class="dropdown-divider"></div>
 
-                          <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+                          <a class="dropdown-item" href="/APMS/Login/logout/logout.php">
+                               <i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout
+                          </a>
 
-                               <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile
-                               </a>
-
-
-                               <div class="dropdown-divider"></div>
-
-                               <a class="dropdown-item" href="/APMS/Login/logout/logout.php">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout
-                               </a>
-
-                          </div>
                      </div>
+                </div>
 
 
-                </li>
+           </li>
            </ul>
       </div>
  </nav>

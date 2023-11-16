@@ -14,7 +14,7 @@
     // Now you can use $user_id
     include("C:/xampp/htdocs/APMS/student/parts/navbar.php");
 
-    echo "the stu id: " . $user_id;
+    // echo "the stu id: " . $user_id;
 
     ?>
 
@@ -31,6 +31,14 @@
                     <div class="container">
                         <div class="table-responsive">
                             <table class="table">
+                                <tr>
+                                    <th>id</th>
+                                    <th>subject_code</th>
+                                    <th>subject_name</th>
+                                    <th>credits</th>
+                                    <th>Grade</th>
+
+                                </tr>
                                 <?php
 
 
@@ -75,8 +83,8 @@
                                 // Assuming you have the semester_id, degree_id, and enrollment_number
 
 
-                                echo "sem id is:" . $semester_id;
-                                echo "degree id is:" . $degree_id;
+                                //  echo "sem id is:" . $semester_id;
+                                // echo "degree id is:" . $degree_id;
 
 
 

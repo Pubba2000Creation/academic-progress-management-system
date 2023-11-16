@@ -66,7 +66,7 @@ include("C:/xampp/htdocs/APMS/Admin/parts/headerA.php")
                         <div class="row">
                             <div class="col-md-6">
 
-                                <img class="rounded-circle" src="/APMS/images/<?php echo $image ?> " style="width: 150px;height: 150px;margin-left: 40%;margin-bottom: 20px;">
+                                <img class="rounded-circle" src="/APMS/images/admin/<?php echo $image ?> " style="width: 150px;height: 150px;margin-left: 40%;margin-bottom: 20px;">
 
                                 <input class="border rounded-pill form-control form-control-sm" type="file" style="width: 300px;margin-left: 30%;" name="new_image">
 
@@ -211,7 +211,7 @@ include("C:/xampp/htdocs/APMS/Admin/parts/headerA.php")
 
                 $source_path = $_FILES['new_image']['tmp_name'];
 
-                $destination_path = "C:/xampp/htdocs/APMS/images/" . $new_image; //wherew we want to sve phot & path added here
+                $destination_path = "C:/xampp/htdocs/APMS/images/admin/" . $new_image; //wherew we want to sve phot & path added here
 
                 //image uploading php funtion
                 $upload = move_uploaded_file($source_path, $destination_path);

@@ -12,9 +12,9 @@ if (isset($_GET['user_id']) && isset($_GET['batch_id']) && isset($_GET['semester
     $batch_id = $_GET['batch_id'];
     $semester_number = $_GET['semester_id'];
 
-    echo "lec ID: $user_id<br>";
-    echo "Batch ID: $batch_id <br>";
-    echo "semester_num:" . $semester_number;
+    //echo "lec ID: $user_id<br>";
+    //echo "Batch ID: $batch_id <br>";
+    //echo "semester_num:" . $semester_number;
 
     $sql_degree = "SELECT degree_id FROM tbl_degree WHERE lecture_id = $user_id";
     $res_degree = mysqli_query($conn, $sql_degree);

@@ -62,7 +62,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="row">
-                                        <div class="col"><img class="rounded-circle" src="/APMS/images/<?php echo $image ?> " style="width: 200px;height: 200px;margin-left: 36%;margin-bottom: 20px;"></div>
+                                        <div class="col"><img class="rounded-circle" src="/APMS/images/student/<?php echo $image ?> " style="width: 200px;height: 200px;margin-left: 36%;margin-bottom: 20px;"></div>
                                     </div>
                                     <div class="row">
 

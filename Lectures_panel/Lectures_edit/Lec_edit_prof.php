@@ -10,7 +10,7 @@ ob_start(); ?>
         //GET THE ID SELECTED ONE
         $user_id = $_SESSION['user_id'];
         $user_id = $_GET['user_id'];
-        echo "user id =" . $user_id;
+       // echo "user id =" . $user_id;
         // create SQL quary to get details
 
         $sql = "SELECT * from tbl_lecturer WHERE lec_id =$user_id";

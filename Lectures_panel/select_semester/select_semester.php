@@ -8,7 +8,7 @@
           $user_id = $_GET['user_id'];
           $batch_id = $_GET['batch_id'];
 
-          echo $user_id . "/" . $batch_id;
+         // echo $user_id . "/" . $batch_id;
 
 
 

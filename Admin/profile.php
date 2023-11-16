@@ -52,7 +52,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="row">
-                                    <div class="col"><img class="rounded-circle" src="/APMS/images/<?php echo $image?> " style="width: 200px;height: 200px;margin-left: 36%;margin-bottom: 20px;"></div>
+                                    <div class="col"><img class="rounded-circle" src="/APMS/images/admin/<?php echo $image?> " style="width: 200px;height: 200px;margin-left: 36%;margin-bottom: 20px;"></div>
                                 </div>
                                 <div class="row">
                                     <div class="col"><button class="btn btn-primary border rounded-pill" type="button" style="margin: 0;margin-right: 20px;" onclick="location.href='<?php echo $linkdin ?>'">Linkedin</button></div>

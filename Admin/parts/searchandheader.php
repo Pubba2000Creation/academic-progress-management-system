@@ -1,6 +1,6 @@
  <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
       <div class="container-fluid">
-           <button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button">
+           <!-- <button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button">
                 <i class="fas fa-bars"></i>
            </button>
            <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
@@ -10,7 +10,7 @@
                           <i class="fas fa-search"></i>
                      </button>
                 </div>
-           </form>
+           </form> -->
            <ul class="navbar-nav flex-nowrap ms-auto">
                 <li class="nav-item dropdown d-sm-none no-arrow">
                      <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
@@ -104,11 +104,37 @@
                 <li class="nav-item dropdown no-arrow">
                      <div class="nav-item dropdown no-arrow">
                           <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
-                               <span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span>
-                               <img class="border rounded-circle img-profile" src="/APMS/Admin/parts/assets/img/avatars/avatar1.jpeg">
+                               <?php
+
+                                   $sql = "SELECT * from tbl_admin WHERE admin_id =$user_id ";
+
+                                   $res = mysqli_query($conn, $sql);
+                                   if ($res == TRUE) {
+                                        $count = mysqli_num_rows($res);
+                                        if ($count > 0) {
+
+                                             while ($rows = mysqli_fetch_assoc($res)) {
+
+
+                                                  $name = $rows["name"];
+
+                                                  $image = $rows["image"];
+                                             }
+                                        }
+                                   }
+                                   ?>
+
+
+
+                               <span class="d-none d-lg-inline me-2 text-gray-600 small"><?php echo $name ?></span>
+
+
+
+
+                               <img class="border rounded-circle img-profile" src="/APMS/images/admin/<?php echo $image ?> ">
                           </a>
                           <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
-                               <a class="dropdown-item" href="/APMS/Admin/profile_page/index.php"><!--edit here  -->
+                               <a class="dropdown-item" href="/APMS/Admin/profile.php?user_id=' <?php echo $user_id; ?>'"><!--edit here  -->
                                     <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
 
                                <div class="dropdown-divider"></div><?php
