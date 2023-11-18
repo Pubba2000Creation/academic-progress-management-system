@@ -171,7 +171,7 @@ include("C:/xampp/htdocs/APMS/Admin/parts/headerA.php");
                         gender ='$gender',
                         bio='$Bio',
                         image='$image_name',
-                        tel_no=$tel_no,
+                        tel_no='$tel_no',
                         gmail='$email',
                         linkdin='$linkdin',
                         github='$github',

@@ -12,9 +12,9 @@ if (isset($_GET['user_id']) && isset($_GET['batch_id']) && isset($_GET['semester
     $batch_id = $_GET['batch_id'];
     $semester_number = $_GET['semester_id'];
 
-    //echo "User ID: $user_id<br>";
-    //echo "Batch ID: $batch_id <br>";
-    //echo "semester_num:" . $semester_number;
+   // echo "User ID: $user_id<br>";
+   // echo "Batch ID: $batch_id <br>";
+   // echo "semester_num:" . $semester_number;
 
     $sql_degree = "SELECT degree_id FROM tbl_degree WHERE lecture_id = $user_id";
     $res_degree = mysqli_query($conn, $sql_degree);
@@ -27,7 +27,7 @@ if (isset($_GET['user_id']) && isset($_GET['batch_id']) && isset($_GET['semester
             }
         }
     }
-
+    //echo"degree id". $degree_id;
     $sql_semester = "SELECT semester_id FROM tbl_semester WHERE degree_id = $degree_id AND semester_number = $semester_number";
     $res_semester = mysqli_query($conn, $sql_semester);
 
@@ -40,6 +40,7 @@ if (isset($_GET['user_id']) && isset($_GET['batch_id']) && isset($_GET['semester
         }
     }
 
+    //echo"tes ture sem id". $semester_id;
     // Fetch subject details from tbl_subject based on degree_id and semester_id
     $sql_subjects = "SELECT * FROM tbl_subject WHERE degree_id = $degree_id AND semester_id = $semester_id";
     $res_subjects = mysqli_query($conn, $sql_subjects);
