@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
-<?php include("C:/xampp/htdocs/APMS/config/constant.php") ?>
+<?php include("E:/xampp/htdocs/APMS-newV2.00/config/constant.php") ?>
 
 <head>
     <meta charset="utf-8">
@@ -95,11 +95,11 @@
 
                                 // Redirect based on user role
                                 if ($row['role_id'] == 1) { // Role ID 1 represents admin
-                                    header("Location: /APMS/Admin/index.php?user_id=".$_SESSION['user_id']);
+                                    header("Location: /APMS-newV2.00/Admin/index.php?user_id=".$_SESSION['user_id']);
                                 } else if ($row['role_id'] == 2) { // Role ID 2 represents student
-                                    header("Location: /APMS/student/index.php?user_id=" . $_SESSION['user_id']);
+                                    header("Location: /APMS-newV2.00/student/index.php?user_id=" . $_SESSION['user_id']);
                                 } else if ($row['role_id'] == 3) { // Role ID 3 represents lecture
-                                    header("Location:/APMS/Lectures_panel/index.php?user_id=" . $_SESSION['user_id']);
+                                    header("Location:/APMS-newV2.00/Lectures_panel/index.php?user_id=" . $_SESSION['user_id']);
                                 }
                                 exit();
                             } else {
